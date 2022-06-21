@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "lib": ["es2020", "esnext", "dom"],
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "es5",
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "allowJs": true,
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

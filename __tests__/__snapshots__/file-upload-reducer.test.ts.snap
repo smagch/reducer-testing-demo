@@ -1,0 +1,785 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`APPEND_FILES dispatch 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "validating",
+    },
+  ],
+  "uploading": undefined,
+  "validating": Object {
+    "name": "file1.txt",
+    "size": 9,
+    "stream": [Function],
+  },
+}
+`;
+
+exports[`APPEND_FILES dispatch 2`] = `
+Object {
+  "items": Array [
+    Object {
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "validating",
+    },
+    Object {
+      "file": Object {
+        "name": "file2.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "waiting",
+    },
+    Object {
+      "file": Object {
+        "name": "file3.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "waiting",
+    },
+  ],
+  "uploading": undefined,
+  "validating": Object {
+    "name": "file1.txt",
+    "size": 9,
+    "stream": [Function],
+  },
+}
+`;
+
+exports[`PROGRESS 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0.2,
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file2.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "uploading",
+    },
+  ],
+}
+`;
+
+exports[`REMOVE FILE 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0.1,
+      "status": "validating",
+    },
+    Object {
+      "file": Object {
+        "name": "file3.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "waiting",
+    },
+    Object {
+      "file": Object {
+        "name": "file4.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "waiting",
+    },
+  ],
+  "uploading": undefined,
+  "validating": Object {
+    "name": "file1.txt",
+    "size": 9,
+    "stream": [Function],
+  },
+}
+`;
+
+exports[`REMOVE FILE 2`] = `
+Object {
+  "items": Array [
+    Object {
+      "file": Object {
+        "name": "file3.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "validating",
+    },
+    Object {
+      "file": Object {
+        "name": "file4.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "waiting",
+    },
+  ],
+  "uploading": undefined,
+  "validating": Object {
+    "name": "file3.txt",
+    "size": 9,
+    "stream": [Function],
+  },
+}
+`;
+
+exports[`UPLOAD_SUCCEEDED 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 1,
+      "status": "uploadSucceeded",
+    },
+    Object {
+      "file": Object {
+        "name": "file2.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file3.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file4.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "uploading",
+    },
+  ],
+  "uploading": Array [
+    Object {
+      "file": Object {
+        "name": "file2.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file3.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file4.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "uploading",
+    },
+  ],
+}
+`;
+
+exports[`VALIDATION_FAILED 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "err": "invalid encoding",
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "validationFailed",
+    },
+    Object {
+      "file": Object {
+        "name": "file2.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "validating",
+    },
+    Object {
+      "file": Object {
+        "name": "file3.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "waiting",
+    },
+    Object {
+      "file": Object {
+        "name": "file4.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "waiting",
+    },
+  ],
+  "uploading": undefined,
+  "validating": Object {
+    "name": "file2.txt",
+    "size": 9,
+    "stream": [Function],
+  },
+}
+`;
+
+exports[`VALIDATION_FAILED 2`] = `
+Object {
+  "items": Array [
+    Object {
+      "err": "invalid encoding",
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "validationFailed",
+    },
+    Object {
+      "err": "invalid csv format",
+      "file": Object {
+        "name": "file2.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "validationFailed",
+    },
+    Object {
+      "file": Object {
+        "name": "file3.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "validating",
+    },
+    Object {
+      "file": Object {
+        "name": "file4.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "waiting",
+    },
+  ],
+  "uploading": undefined,
+  "validating": Object {
+    "name": "file3.txt",
+    "size": 9,
+    "stream": [Function],
+  },
+}
+`;
+
+exports[`VALIDATION_SUCCEEDED 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file2.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "validating",
+    },
+    Object {
+      "file": Object {
+        "name": "file3.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "waiting",
+    },
+    Object {
+      "file": Object {
+        "name": "file4.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "waiting",
+    },
+  ],
+  "uploading": Array [
+    Object {
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+  ],
+  "validating": Object {
+    "name": "file2.txt",
+    "size": 9,
+    "stream": [Function],
+  },
+}
+`;
+
+exports[`VALIDATION_SUCCEEDED 2`] = `
+Object {
+  "items": Array [
+    Object {
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file2.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file3.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "validating",
+    },
+    Object {
+      "file": Object {
+        "name": "file4.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "waiting",
+    },
+  ],
+  "uploading": Array [
+    Object {
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file2.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+  ],
+  "validating": Object {
+    "name": "file3.txt",
+    "size": 9,
+    "stream": [Function],
+  },
+}
+`;
+
+exports[`VALIDATION_SUCCEEDED 3`] = `
+Object {
+  "items": Array [
+    Object {
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file2.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file3.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file4.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "status": "validating",
+    },
+  ],
+  "uploading": Array [
+    Object {
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file2.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file3.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+  ],
+  "validating": Object {
+    "name": "file4.txt",
+    "size": 9,
+    "stream": [Function],
+  },
+}
+`;
+
+exports[`VALIDATION_SUCCEEDED 4`] = `
+Object {
+  "items": Array [
+    Object {
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file2.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file3.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file4.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "validationSucceeded",
+    },
+  ],
+  "uploading": Array [
+    Object {
+      "file": Object {
+        "name": "file1.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file2.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+    Object {
+      "file": Object {
+        "name": "file3.txt",
+        "size": 9,
+        "stream": [Function],
+      },
+      "progress": 0,
+      "stats": Object {
+        "columns": Array [
+          "id",
+          "name",
+          "email",
+        ],
+        "hash": "hash",
+        "rowCount": 1000,
+      },
+      "status": "uploading",
+    },
+  ],
+}
+`;
+
+exports[`empty state 1`] = `
+Object {
+  "items": Array [],
+}
+`;
