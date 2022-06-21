@@ -5,6 +5,9 @@
     "name": "Tomoya Shimaguchi",
     "url": "https://smagch.com"
   },
+  "scripts": {
+    "test": "jest"
+  },
   "private": true,
   "license": "MIT",
   "engines": {
